@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="475.0" prefWidth="430.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.gui.controller.MainViewController">
+    <children>
+        <Text layoutX="129.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CD Helper">
+            <font>
+                <Font size="38.0" />
+            </font>
+        </Text>
+        <Button fx:id="addTrackNrFromFilenameButton" layoutX="80.0" layoutY="100.0" mnemonicParsing="false" onAction="#handleAddTrackNrFromFilenameButton" prefHeight="55.0" prefWidth="268.0" text="Add TrackNr From Filename" />
+        <Button fx:id="addCDNrToFilenameButton" layoutX="80.0" layoutY="170.0" mnemonicParsing="false" onAction="#handleAddCDNrToFilenameButton" prefHeight="55.0" prefWidth="268.0" text="Add CD Nr To Filename" />
+        <Button fx:id="deleteNonAudiofilesButton" layoutX="80.0" layoutY="240.0" mnemonicParsing="false" onAction="#handleDeleteNonAudiofilesButton" prefHeight="55.0" prefWidth="268.0" text="Delete Non-Audiofiles" />
+        <Button fx:id="moveFilesToCorrespondingFoldersButton" layoutX="80.0" layoutY="310.0" mnemonicParsing="false" onAction="#handleMoveFilesToCorrespondingFoldersButton" prefHeight="55.0" prefWidth="268.0" text="Move Files To Corresponding Folders" />
+        <Button fx:id="deleteEmptyFoldersButton" layoutX="80.0" layoutY="380.0" mnemonicParsing="false" onAction="#handleDeleteEmptyFoldersButton" prefHeight="55.0" prefWidth="268.0" text="Delete Empty Folders" />
+
+    </children>
+</AnchorPane>

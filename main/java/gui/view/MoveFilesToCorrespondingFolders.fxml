@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="695.0" prefWidth="811.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.gui.controller.MoveFilesToCorrespondingFoldersController">
+
+    <children>
+        <Label layoutX="119.0" layoutY="35.0" prefHeight="64.0" prefWidth="578.0" text="Move Files To Corresponding Folders" textAlignment="CENTER">
+            <font>
+                <Font size="35.0" />
+            </font>
+        </Label>
+        <TableView fx:id="albumsTable" layoutX="25.0" layoutY="120.0" prefHeight="500.0" prefWidth="765.0">
+            <columns>
+                <TableColumn fx:id="artist" prefWidth="150.0" text="Artist">
+                </TableColumn>
+                <TableColumn fx:id="album" prefWidth="150.0" text="Album">
+                </TableColumn>
+                <TableColumn fx:id="folderToMoveTo" prefWidth="450.0" text="Folder to move to">
+                </TableColumn>
+            </columns>
+        </TableView>
+        <ImageView fx:id="singleTickImageView" fitHeight="48.0" fitWidth="48.0" layoutX="562.0" layoutY="633.0" onMouseClicked="#handleSingleTickButton" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@/main/resources/img/icons8-checkmark-96.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="doubleTickImageView" fitHeight="48.0" fitWidth="48.0" layoutX="657.0" layoutY="633.0" onMouseClicked="#handleDoubleTickButton" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@/main/resources/img/icons8-double-tick-96.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="crossImageView" fitHeight="48.0" fitWidth="48.0" layoutX="742.0" layoutY="633.0" onMouseClicked="#handleCrossButton" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@/main/resources/img/icons8-close-window-96.png" />
+            </image>
+        </ImageView>
+    </children>
+
+</AnchorPane>

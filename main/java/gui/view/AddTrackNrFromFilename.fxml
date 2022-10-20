@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="668.0" prefWidth="514.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.gui.controller.AddTrackNrFromFilenameController">
+    <children>
+        <Label layoutX="29.0" layoutY="14.0" prefHeight="64.0" prefWidth="485.0" text="Add Track Nr From Filename" textAlignment="CENTER">
+            <font>
+                <Font size="35.0" />
+            </font>
+        </Label>
+        <TableView fx:id="albumBefore" layoutX="21.0" layoutY="105.0" prefHeight="500.0" prefWidth="475.0">
+            <columns>
+                <TableColumn fx:id="filename" prefWidth="160.0" text="Filename">
+                </TableColumn>
+                <TableColumn fx:id="albumColumn" prefWidth="140.0" text="Album">
+                </TableColumn>
+                <TableColumn fx:id="generatedTrackNr" prefWidth="160.0" text="Generated Track Nr">
+                </TableColumn>
+            </columns>
+        </TableView>
+        <ImageView fx:id="doubleTickImageView" fitHeight="48.0" fitWidth="48.0" layoutX="361.0" layoutY="611.0" onMouseClicked="#handleDoubleTickButton" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@/main/resources/img/icons8-double-tick-96.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="crossImageView" fitHeight="48.0" fitWidth="48.0" layoutX="438.0" layoutY="611.0" onMouseClicked="#handleCrossButton" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@/main/resources/img/icons8-close-window-96.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>

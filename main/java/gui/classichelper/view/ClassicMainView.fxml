@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="279.0" prefWidth="306.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.gui.classichelper.controller.ClassicMainViewController">
+
+    <children>
+        <Text layoutX="38.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Classic Helper">
+            <font>
+                <Font size="38.0" />
+            </font>
+        </Text>
+        <Label layoutX="100.0" layoutY="69.0" prefHeight="17.0" prefWidth="71.0" text="Total CD Nr" />
+        <TextField fx:id="totalCDNrTextField" layoutX="171.0" layoutY="65.0" prefHeight="25.0" prefWidth="35.0" />
+        <Button fx:id="determineCDNrButton" disable="true" layoutX="18.0" layoutY="100.0" mnemonicParsing="false" onAction="#handleDetermineCDNrButton" prefHeight="55.0" prefWidth="268.0" text="Determine CD Nr" />
+        <Button fx:id="moveArtistToGroupButton" disable="true" layoutX="18.0" layoutY="170.0" mnemonicParsing="false" onAction="#handleMoveArtistToGroupButton" prefHeight="55.0" prefWidth="268.0" text="Move Artist To Group" />
+        <ComboBox  fx:id="possibleArtistsChoiceBox" layoutX="18.0" layoutY="239.0" prefHeight="25.0" prefWidth="268.0" />
+        
+    </children>
+
+</AnchorPane>

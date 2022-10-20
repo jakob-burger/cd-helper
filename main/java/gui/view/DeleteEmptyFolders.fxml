@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="471.0" prefWidth="515.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.gui.controller.DeleteEmptyFoldersController">
+    <children>
+        <Label layoutX="89.0" layoutY="22.0" prefHeight="64.0" prefWidth="338.0" text="Delete Empty Folders" textAlignment="CENTER">
+            <font>
+                <Font size="35.0" />
+            </font>
+        </Label>
+        <TableView fx:id="files" layoutX="20.0" layoutY="104.0" prefHeight="300.0" prefWidth="475.0">
+            <columns>
+                <TableColumn fx:id="path" prefWidth="460.0" text="Path">
+                </TableColumn>
+            </columns>
+        </TableView>
+        <ImageView fx:id="crossImageView" fitHeight="48.0" fitWidth="48.0" layoutX="447.0" layoutY="413.0" onMouseClicked="#handleCrossButton" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@/main/resources/img/icons8-close-window-96.png" />
+            </image>
+        </ImageView>
+      <Label layoutX="122.0" layoutY="422.0" prefHeight="31.0" prefWidth="272.0" text="These files prevent the folders from beeing deleted" />
+    </children>
+</AnchorPane>
